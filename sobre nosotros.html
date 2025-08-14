@@ -1,0 +1,141 @@
+<html lang="es">
+<head>
+  <a href="index.html"><button class="boton-volver">Volver</button></a>
+
+ 
+    
+      <title>Instituto Técnico  Rafael Pineda Ponce</title>
+  
+      <style>
+
+        *
+
+        
+        
+        {
+          margin: 0; padding: 0;
+          box-sizing: border-box;
+        }
+        body {
+          font-family: 'Montserrat', sans-serif;
+          background: linear-gradient(135deg, #f0f5ff, #e0ecff);
+          color: #222;
+          padding: 20px;
+        }
+        
+        .boton-container {
+          margin-bottom: 30px;
+        }
+        .boton-volver {
+          background: #ff63e0;
+          color: #44f8f8;
+          text-decoration: none;
+          padding: 15px 15px;
+          font-size: 15px;
+          font-weight: bold;
+          border-radius: 12px;
+         cursor: pointer;
+         box-shadow: 0 8px 16px #ec73e0;
+        }
+        .boton-volver:hover {
+          background: #1aaeae;
+          transform: scale(1.2);
+        }
+        header {
+          text-align: center;
+          margin-bottom: 40px;
+        }
+        header h1 {
+          font-size: 2.5rem;
+          color: #333;
+        }
+        .container {
+          max-width: 800px;
+          margin: 0 auto;
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 30px;
+        }
+        .bloque {
+          background: #fff;
+          padding: 30px;
+          border-radius: 16px;
+          box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+          position: relative;
+          overflow: hidden;
+        }
+        .bloque::after {
+          content: '';
+          position: absolute;
+          width: 200px;
+          height: 200px;
+          background: rgba(163, 159, 238, 0.1);
+          border-radius: 50%;
+          top: -40px;
+          right: -40px;
+        }
+        .bloque h2 {
+          font-size: 1.75rem;
+          margin-bottom: 15px;
+          color: #639cff;
+          position: relative;
+          z-index: 1;
+        }
+        .bloque p {
+          font-size: 1rem;
+          line-height: 1.6;
+          color: #555555;
+          position: relative;
+          z-index: 1;
+        }
+        @media (min-width: 700px) {
+          .container {
+            grid-template-columns: 1fr 1fr;
+          }
+        }
+        @media (max-width: 600px) {
+          .boton-volver {
+            width: 100%;
+            text-align: center;
+          }
+          header h1 {
+            font-size: 2rem;
+          }
+        }
+        
+      </style>
+    </head>
+    <body>
+      <div class="boton-container">
+        <a href="index.html"></a>
+      </div>
+    
+      <header>
+        <h1>Instituto Técnico Rafael Pineda Ponce</h1>
+      </header>
+    
+      <div class="container">
+        <div class="bloque">
+          <h2>Visión</h2>
+          <p>
+           El Instituto Rafael Pineda Ponce, como una institución de calidad, se propone brindar una educación de excelencia
+        que forme alumnos y alumnas comprometidos(as) con el desarrollo de la comunidad y del país. Nuestros egresados serán
+        ciudadanos(as) con altos valores morales, cívicos y espirituales, capaces de aplicar sus conocimientos científicos y culturales,
+        dejando huellas positivas en su vida y siendo ejemplo digno de imitar.
+          </p>
+        </div>
+    
+        <div class="bloque">
+          <h2>Misión</h2>
+          <p>
+            El Instituto Rafael Pineda Ponce, en un plazo de cinco años, busca ofrecer una educación integral que cuente con todos
+        los recursos físicos y humanos indispensables. Esto permitirá fortalecer los valores espirituales, morales y cívicos en nuestros
+        educandos, elevando así la calidad educativa de nuestra institución.
+          </p>
+        </div>
+
+    </body>
+    
+</style>
+  </head>  
+</html>

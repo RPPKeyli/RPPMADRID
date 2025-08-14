@@ -1,0 +1,151 @@
+<html>
+    <head>
+       <center> <title>Estudiantes y docentes</title></center>
+    </head>
+<style>
+  
+    body{
+background-color: azure;
+font-family: 'Times New Roman', Times, serif;
+margin: 0%;
+padding: 20px;
+ }
+ h1,h2 {
+          text-align: center;
+          color: #0b56a2;
+        }
+ .menu{
+  list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }     
+.menu li {
+position: relative;
+background: linear-gradient(to bottom right, #d7fba7, #91deed);
+padding: 12px 25px;
+border-radius: 20px;
+font-weight: bold;
+color: #000;
+box-shadow: 6px 8px 5px #00084d;
+}
+.boton-volver {
+          background: #ff63e0;
+          color: #44f8f8;
+          text-decoration: none;
+          padding: 15px 15px;
+          font-size: 15px;
+          font-weight: bold;
+          border-radius: 12px;
+         cursor: pointer;
+         box-shadow: 0 8px 16px #ec73e0;
+        }
+        .boton-volver:hover {
+          background: #1aaeae;
+          transform: scale(1.2);
+        }
+.submenu{
+display: none;
+position: absolute;
+top: 100%;
+left: 0%;
+background: white;
+padding: 10px;
+border: 2px solid #0d0c0c;
+border-radius: 15px;
+z-index: 1;
+box-shadow: 6px 6px 10px #91deed;
+
+}
+.submenu table{
+border-collapse: collapse;
+width: 100%;
+}
+
+.submenu th{
+background-color: #00084d;
+color: #639cff;
+padding: 8px;
+border-radius: 5px;
+}
+
+.submenu td{
+padding: 8px;
+text-align: center;
+
+}
+
+.menu li:hover .submenu{
+display: block;
+}
+
+.submenu button{
+padding: 8px 15px;
+background-color: #f96464;
+border: none;
+border-radius: 10px;
+font-weight: bold;
+cursor: pointer;
+box-shadow: 4px 6px 4px #430000;
+transition: transform 0.3s, background-color 0.3s;
+
+}
+.submenu button:hover{
+background-color: #888c84;
+transform: scale(1.1);
+
+}
+
+
+header {
+          text-align: center;
+          margin-bottom: 40px;
+        }
+
+
+/* Encabezados */
+th {
+  background-color: #f8bbd0;
+  font-weight: bold;
+  text-align: center;
+}
+table {
+  border-collapse: collapse;
+  width: 8%;
+  margin: 20px auto;
+  border: 2px solid #e91e63; /* borde rosado fuerte */
+  box-shadow: 0 4px 10px rgba(233, 30, 99, 0.5); /* sombrita rosadita */
+}
+
+</style>
+</head>
+
+
+
+
+
+    <body>
+      <div class="boton-container"></div>
+      <a href="Estudiantes y profesores.html"></a>
+      <center>  <h1 class="center">Alumnos y Maestros</h1></center>
+      
+       <tr><th><center>DOCENTES</center></th></tr>
+        <div class="submenu td"></div> 
+<table>  <td><a href="file:///C:/Users/Keyli/Desktop/Keyli%202025/Desarrollo%20Web/El%20Proyecto/Docentes%20IRRP%202025.pdf" target="_blank"><button>Docentes 2025</button></a></td>
+</table>
+        
+     
+      
+
+  <tr><th><center>ESTUDIANTES</center></th></tr>
+  
+
+<div class="submenu td"></div> 
+<table>
+  <td><a href="file:///C:/Users/Keyli/Desktop/Keyli%202025/Desarrollo%20Web/El%20Proyecto/Docentes%20IRRP%202025.pdf"  target="_blank"><button>Estudiantes 2025</button></a></td>
+  
+</table>
+<a href="index.html"> <button class="boton-volver"> Volver</button></a>
+    </body>
+</html>

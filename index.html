@@ -1,0 +1,207 @@
+ 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <style>
+        
+        body {
+            font-family: 'Times New Roman', Times, serif;
+          /*agrega tu imagen*/
+          background-size: cover; /* ajusta la imagen al/* cambia a la tamaño de */
+          background-repeat: no-repeat; /* no repetir la imagen */
+          background-position: center center; /* centrar la imagen */
+          background-color: #ffccff;
+          height: 100vh; /* alto completo del viewport*/
+          margin: 0; 
+          font-family: Arial,  sans-serif;
+        }
+        
+        .contenedor  { 
+
+            width: 200px;
+            height: 200px;
+            margin: 50px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 4px solid #e60895;
+            border-radius: 20px;
+            overflow: hidden;
+            background-color: #ff63e0;
+            perspective: 1000px; /*da profundidad al giro 3D*/
+        }
+
+         .imagen-giratoria { 
+
+            width: 200px;
+            height: 200px;
+            animation: girarYInverso 3s linear infinite;
+            transform-style: preserve-3d;
+         }
+
+@keyframes girarYInverso {
+     from  {
+        transform: rotateY(0deg);
+}
+    to {
+        transform: rotateY(-360deg);
+}
+}
+
+        .menu {
+            list-style: none;
+            padding: 0;
+            display: flex; 
+            gap: 100px;
+        }
+        .menu li {
+            position: relative; 
+            background: #f979f9;
+            padding: 10px;
+            color: white; 
+            cursor: pointer; 
+            border-radius: 15px;
+        }
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 50;
+            background:rgb(54, 122, 146);
+            color: white;
+            border: 5px solid #c10505;
+            border-radius: 5px;
+        }
+        .submenu table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .submenu td, .submenu th {
+            border: 1px solid #f979f9;
+            padding: 8px;
+        }
+        .menu li:hover .submenu {
+            display: block;
+        }
+        /* 🔥  tabla  */
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 20px auto;
+  border: 2px solid #e91e63; /* borde rosado fuerte */
+  box-shadow: 0 4px 10px rgba(233, 30, 99, 0.5); /* sombrita rosadita */
+}
+
+/* Celdas normales */
+th, td {
+  border: 1px solid #e91e63;
+  padding: 10px 15px;
+  text-align: left;
+  background-color: #fff0f5; /* fondo rosita pastel */
+  color: #333;
+}
+
+/* Encabezados */
+th {
+  background-color: #f8bbd0;
+  font-weight: bold;
+  text-align: center;
+}
+    </style>
+</head>
+<body>
+
+    <ul class="menu">
+       
+        <li>
+                <table>
+                    <tr><th><a href="sobre nosotros.html"><button style="background-color:#f979f9 ;">SOBRE NOSOTROS</button></a></th></tr>
+
+                  
+                    
+                </table>
+        </li>
+        <li>
+            
+            <div class="menu">
+                <table>
+                    
+                    <tr><th><a href="oferta academica.html"><button style="background-color: #f979f9;">OFERTA ACADEMICA</button></a></th></tr>
+                   
+                </table>
+        
+        </li>
+        <li>
+        <div class="menu">
+            <table>
+<tr><th><a href="estudiantes y profesores.html"><button style="background-color: #f979f9;">ESTUDIANTES Y DOCENTES</button></a></th></tr>
+            </table>
+
+
+        </div>
+       
+            
+            </div>
+        </li>
+        <li>
+           
+            <div class="menu">
+                <table>
+                    
+                    <tr><th><a href="galeria.html"><button style="background-color: #f979f9;">GALERIA</button></a></th></tr>
+                    
+                </table>
+          
+        </li>
+        <li>
+           
+            <div class="menu">
+                <table>
+                    <tr><th><a href="contacto.html"><button style="background-color: #f979f9;">CONTACTO</button></a></th></tr>
+                  
+                </table>
+</div>
+           
+        </li>
+    </ul> 
+    
+        <table border="1" width="100%">
+            
+<tr>
+    <td rowspan="2"><center> <img src="logo del colegio.png" alt="" width="200" height="" class="imagen-giratoria">
+    </center>
+    
+    </td>
+    <th>INSTITUTO TECNICO RAFAEL PINEDA PONCE</th>
+  <tr>
+    <td>
+<table border="1" width="100%">
+        <tr>
+          <th>  INFORMACION</th>
+          <th>DETALLE</th>
+        
+        </tr>
+<td>NOMBRE DEL COLEGIO</td>
+    <td>INSTITUTO TECNICO RAFAEL PINEDA PONCE</td>
+</tr>
+
+    <td>UBICACION</td>
+    <td>SANTIAGO, TELA ,ATLANTIDA</td>
+</tr>
+    <td>ESPECIALIDAD</td>
+    <td>TECNICO</td>
+</tr>
+<td>CONTACTO</td>
+<td>97532245</td>
+    </table>
+</td>
+</tr>
+
+        </table>
+        
+        
+</body>
+
+</html>
